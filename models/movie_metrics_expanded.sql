@@ -19,7 +19,7 @@ SELECT
     ,SUM(mm.tickets_sold)
     ,SUM(i.rental_cost)
     ,mm.location
-    ,SUM(mm.transaction_total - i.rental_cost) AS revenue
+    ,SUM(mm.transaction_total) AS revenue
 FROM
     {{ ref('movie_metrics') }} AS mm
 JOIN
@@ -38,4 +38,3 @@ SELECT
     *
 FROM
     tt
-ORDER BY revenue ASC
