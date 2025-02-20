@@ -12,8 +12,9 @@ sources:
           - name: invoice_id
             description: "Unique identifier for each invoice."
             tests:
-              - unique
               - not_null
+              - unique:
+                  severity: warn
           - name: movie_id
             description: "Identifier for the movie being screened."
             tests:

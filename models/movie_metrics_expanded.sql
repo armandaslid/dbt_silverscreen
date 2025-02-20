@@ -6,7 +6,7 @@ SELECT
     ,SUM(total_invoice_sum) AS rental_cost
     ,location_id AS location
 FROM
-    {{ source('silverscreen', 'invoices') }}
+    {{ ref('invoices_clean') }}
 GROUP BY
     movie_id, month, location
 ),
