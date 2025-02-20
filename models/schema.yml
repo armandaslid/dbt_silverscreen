@@ -120,36 +120,53 @@ sources:
       - name: nj_002
         description: "Information on all transactions from location Number 2."
         columns:
-          - name: transaction_id
-            description: "Unique identifier for each transaction."
-            tests:
-              - unique
-              - not_null
-          - name: transaction_date
-            description: "Date when the transaction occurred."
+          - name: movie_id
+            description: "A identifier for the movie being sold, typically tied to a movie's ID."
             tests:
               - not_null
-          - name: total_amount
-            description: "Total transaction amount."
+          - name: date
+            description: "The date of the ticket sales transaction, formatted as YYYY-MM-DD. This represents the day for which ticket sales are recorded."
+            tests:
+              - not_null
+          - name: ticket_amount
+            description: "The number of tickets sold on the given day."
+            tests:
+              - not_null
+          - name: ticket_price
+            description: "The price per ticket sold on that particular day."
+            tests:
+              - not_null
+          - name: total_earned
+            description: "The total revenue earned from ticket sales on the specified date, calculated as ticket_amount * ticket_price."
             tests:
               - not_null
       - name: nj_003
         description: "Information on all transactions from location Number 3, covering various product types such as tickets, snacks, drinks, etc."
         columns:
           - name: transaction_id
-            description: "Unique identifier for each transaction."
+            description: "A unique alphanumeric identifier assigned to each transaction, ensuring that each transaction can be uniquely identified."
             tests:
               - unique
               - not_null
-          - name: transaction_date
-            description: "Date when the transaction occurred."
+          - name: timestamp
+            description: "The date and time when the transaction occurred, formatted as YYYY-MM-DD."
             tests:
               - not_null
           - name: product_type
-            description: "Type of product sold."
+            description: "The type of product involved in the transaction, which could be a ticket, drink, snack, etc."
             tests:
               - not_null
-          - name: total_amount
-            description: "Total transaction amount."
+          - name: details
+            description: "For tickets, this indicates the movie being viewed, represented by the movie_id. For other products, it remains empty or unspecified."
+          - name: amount
+            description: "The quantity of the product purchased in the transaction."
+            tests:
+              - not_null
+          - name: price
+            description: "The price per unit of the product sold. This is the cost of one item, whether it's a ticket, drink, or snack."
+            tests:
+              - not_null
+          - name: total_value
+            description: "The total amount spent in the transaction, calculated as amount * price."
             tests:
               - not_null
