@@ -16,8 +16,8 @@ tt AS
 SELECT
     mm.movie_id
     ,mm.month
-    ,SUM(mm.tickets_sold)
-    ,SUM(i.rental_cost)
+    ,SUM(mm.tickets_sold) AS tickets_sold
+    ,SUM(i.rental_cost) AS rental_cost
     ,mm.location
     ,SUM(mm.transaction_total) AS revenue
 FROM
