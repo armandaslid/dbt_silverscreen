@@ -2,7 +2,7 @@ WITH nj3 AS
 (
 SELECT
     details AS movie_id
-    ,DATE_TRUNC('MONTH', timestamp) AS month
+    ,{{ date_trunc_month('timestamp') }} AS month
     ,SUM(amount) AS tickets_sold
     ,SUM(total_value) AS transaction_total
     ,'NJ_003' AS location
