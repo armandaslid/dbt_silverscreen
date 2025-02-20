@@ -6,7 +6,7 @@ SELECT
     ,SUM(total_invoice_sum) AS rental_cost
     ,location_id AS location
 FROM
-    {{ source('silverscreen', 'invoices') }}
+    {{ ref('invoices_clean') }}
 GROUP BY
     movie_id, month, location
 ),
@@ -16,10 +16,10 @@ tt AS
 SELECT
     mm.movie_id
     ,mm.month
-    ,SUM(mm.tickets_sold)
-    ,SUM(i.rental_cost)
+    ,SUM(mm.tickets_sold) AS tickets_sold
+    ,SUM(i.rental_cost) AS rental_cost
     ,mm.location
-    ,SUM(mm.transaction_total - i.rental_cost) AS revenue
+    ,SUM(mm.transaction_total) AS revenue
 FROM
     {{ ref('movie_metrics') }} AS mm
 JOIN
@@ -38,4 +38,3 @@ SELECT
     *
 FROM
     tt
-ORDER BY revenue ASC
