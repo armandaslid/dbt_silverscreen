@@ -191,7 +191,7 @@ models:
         description: "A unique identifier for each movie"
         tests:
           - not_null
-  - name: movies_catalogue_clean
+  - name: movie_catalogue_clean
     description: "Cleaned movies_catalogue dataset: NULL values replaced with 'Unknown' in genre column; selected only necessary columns."
     columns:
       - name: movie_id
