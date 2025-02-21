@@ -34,13 +34,21 @@ To create a comprehensive table summarizing the monthly performance for each mov
 * [nj_003.csv](https://github.com/armandaslid/dbt_silverscreen/blob/main/other_files/nj_003.csv)  
 
 ## Results:  
+
 ### Preliminary SilverScreen DAG (Directed Acyclic Graph):  
+
 <img src="https://github.com/armandaslid/dbt_silverscreen/blob/main/other_files/silverscreen_dag.png" alt="Preliminary SilverScreen DAG">  
+
 ### Final Project Lineage:  
+
 <img src="https://github.com/armandaslid/dbt_silverscreen/blob/main/other_files/silverscreen_lineage.png" alt="SilverScreen Project Lineage">  
+
 ### Snowflake Cloud View:  
+
 <img src="https://github.com/armandaslid/dbt_silverscreen/blob/main/other_files/snowflake_view.png" alt="Snowflake Cloud View">  
+
 ### Other results:  
+
 * [Models and schema.yml](https://github.com/armandaslid/dbt_silverscreen/tree/main/models)  
 * [Custom tests](https://github.com/armandaslid/dbt_silverscreen/tree/main/tests)  
 * [Macros](https://github.com/armandaslid/dbt_silverscreen/tree/main/macros)
