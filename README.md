@@ -53,4 +53,4 @@ To create a comprehensive table summarizing the monthly performance for each mov
 * [Custom tests](https://github.com/armandaslid/dbt_silverscreen/tree/main/tests)  
 * [Macros](https://github.com/armandaslid/dbt_silverscreen/tree/main/macros)
 * [dbt-generated documentation](https://rp628.us1.dbt.com/accounts/70471823428904/develop/70471823603459/docs/index.html#!/overview)
-* [📺 Video presentation](404)  
+* [📺 Video presentation (Part 1)](https://drive.google.com/file/d/1-MT24siuB0f9W0GIDWtBbRVVOSPmSdk7/view?usp=sharing); [📺 dbt test and dbt build + dbt Job (Part 2)](https://drive.google.com/file/d/1xj_yIRty_z9v0-KdGIXKuudV0agr8G-v/view?usp=sharing)
