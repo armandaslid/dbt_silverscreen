@@ -24,7 +24,7 @@ To create a comprehensive table summarizing the monthly performance for each mov
 `tickets_sold`  
 `revenue`  
   
-I will be using the **Snowflake** cloud platform to store datasets, and **dbt** for transformation: cleaning the data, creating models, defining tests, writing YAML files, defining macros, and executing dbt jobs.
+:warning: I will be using the **Snowflake** cloud platform to store datasets, and **dbt** for transformation: cleaning the data, creating models, defining tests, writing YAML files, defining macros, and executing dbt jobs.
   
 ### Given data sources:  
 * [invoices.csv](https://github.com/armandaslid/dbt_silverscreen/blob/main/other_files/invoices.csv)  
