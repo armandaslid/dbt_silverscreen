@@ -9,9 +9,9 @@ To create a comprehensive table summarizing the monthly performance for each mov
 * Total revenue generated from ticket sales at each location  
   
 ### Key Steps in the Process:  
-**Clean Movie Data**: Refine and standardize the movie-related information (titles, genres, studios) to ensure consistency and accuracy across the dataset.
-**Unify Location Data**: Combine data from all locations to obtain a complete view of ticket sales and revenue for each movie at each theater during a given month.
-**Merge Rental Costs**: Integrate monthly rental cost data with corresponding sales and revenue information to give a full financial picture for each movie at each location.
+**Clean Movie Data**: Refine and standardize the movie-related information (titles, genres, studios) to ensure consistency and accuracy across the dataset.  
+**Unify Location Data**: Combine data from all locations to obtain a complete view of ticket sales and revenue for each movie at each theater during a given month.  
+**Merge Rental Costs**: Integrate monthly rental cost data with corresponding sales and revenue information to give a full financial picture for each movie at each location.  
 
 ### The final output will be a structured table with the following columns:  
 `movie_id`  
